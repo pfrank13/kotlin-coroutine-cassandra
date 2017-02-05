@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner
 @RunWith(SpringRunner::class)
 @SpringBootTest
 @TestExecutionListeners(listeners = arrayOf(CassandraUnitDependencyInjectionIntegrationTestExecutionListener::class), mergeMode = TestExecutionListeners.MergeMode.MERGE_WITH_DEFAULTS)
-@EmbeddedCassandra(configuration = EmbeddedCassandraServerHelper.CASSANDRA_RNDPORT_YML_FILE,timeout = 60000)
+@EmbeddedCassandra(configuration = "cassandra.yaml",timeout = 60000)
 open class KotlinCoroutineCassandraParentPomApplicationTests {
   
   @Test
