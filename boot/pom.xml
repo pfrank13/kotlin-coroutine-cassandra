@@ -46,7 +46,7 @@
     </dependency>
     <dependency>
       <groupId>org.cassandraunit</groupId>
-      <artifactId>cassandra-unit-spring</artifactId>
+      <artifactId>cassandra-unit-spring-boot</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
